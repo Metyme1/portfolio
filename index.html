@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="he">
+    <div id="header">
+        <div class="container">
+            <div class="logo">
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                
+                <h2>Hello, I'm <span>Mety Million</span> </h2>
+            <h4>3rd year <span>Software Engineering</span><br> Student</h4>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="meto2.jpg" alt="">
+
+                </div>
+                <div class="about-col-1">
+                    <h1 class="sub">About me</h1>
+                    <p>
+                        Recent 3rd year Software Engineering student at Adama science and Technology university
+                        with a passion for coding and software engineering.
+                        Eager to learn and be involved in the development
+                        of innovative software solutions.And currently 
+                        working on web projects,competitive programming and adobe illustrator.
+
+                    </p> 
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links "onclick="opentab('certificates')">Certificates</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span>programming language</span><br>JS,Python,C++,Java</li>
+                            <li> <span>Graphics Designing</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li> <span>3rd year software engineering Student</span><br>with CGPA:</li>
+                            <li> <span>Expected Graduation</span><br>June/July-2025</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li> <span>Python basics completion certificate 
+                            </span><br>from hacker rank</li>
+                            <li> <span>Graphics Design</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                
+                <h1 class="sub-title">           Contact Me</h1>
+            
+            <br><br>
+            <ul>
+                <li><span>Email: </span>millionmety@gmail.com</li>
+                <li><span>Phone: </span>+25161736510</li>
+            </ul>
+                
+                <br><br>
+                <!-- <div class="social-icons">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                    <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i> </a>
+                    <a href=""><i class="fa fa-facebook-linkedin" aria-hidden="true"></i> </a>
+
+                </div> -->
+                <a href="cv.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+
+            <div class="contact-right">
+            <form name="submit-to-google-sheet" autocomplete="off">
+                <input type="text" name="Name" placeholder="your Name" required>
+                <input type="email" name="Email" placeholder="your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit"class="btn btn2">Submit</button>
+
+            </form>
+            <span id="msg"></span>
+        </div>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

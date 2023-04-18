@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    box-sizing:border-box;
+}
+body{
+    /* background:radial-gradient(rgb(36, 120, 209),rgb(3, 35, 52)); */
+    background: black;
+    color: rgb(255, 255, 255);
+
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    width:100%;
+    height:100vh;
+    background-image: url("meto2.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:40%;
+    
+    
+}
+.container{
+    padding:10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding:30px 80px;
+    padding-left: 0px;
+    padding-right: -5px;
+    margin: 0px;
+    top:0;
+    left: 0;
+   
+
+} 
+nav{
+    flex:1;
+    text-align: right;
+
+
+
+} 
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin:10px 20px
+
+    
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width:0%;
+    height:3px;
+    background: #ff004f;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+
+}
+
+.header-text{
+    margin-top:20%;
+    font-size: 30px;
+    
+
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top:20px ;
+    font: bold;
+}
+.header-text h2 span{
+    color: #ff004f;
+}
+.header-text h4 span{
+    color: #ff004f;
+
+}
+
+/* about */
+
+
+#about{
+    padding: 80px 0;
+    color:white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis:50%;
+}
+.about-col-1 h1{
+    color: #ff004f;
+}
+.about-col-1 img{
+    width:60%;
+    border-radius:15px;
+}
+.about-col-1{
+    flex-basis: 50%;
+} 
+.sub{
+    font-size: 60px;
+    font-weight: 600;
+    font: #ff004f;
+
+}
+
+.tab-titles{
+    display: flex;
+    margin:20px 0 40px;
+    
+
+}
+.tab-links{
+    margin-right:50px;
+    font-size:18px;
+    font-weight:500;
+    cursor:pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content: "";
+    width:0;
+    height:3px;
+    background:  #ff004f;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition: 0.5;
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0;
+}
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 20px;
+}
+.tab-contents{
+    display: none;
+
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* contact */
+
+.contact-left{
+    margin-top: 30px ;
+    color: #ff004f;
+    font-size: 25px;
+
+}
+.contact-left ul {
+    color:#fff7fa;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-left span {
+    color:#ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top:30px;
+}
+/* social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+} */
+
+.btn.btn2{
+
+    background-color: #ff004f;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+
+    .contact-right form{
+        width:100%;
+
+    }
+    form input,form textarea{
+        width:100%;
+        border:0;
+        outline: none;
+        background: #262626;
+        padding:15px;
+        margin: 15px 0;
+        color: #fff;
+        font-size:18px;
+        border-radius: 6px;
+
+
+    }
+form .btn2{
+    padding:14px 60px;
+    font-size:18px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+
+/* css for small screen */
+@media only screen and(max-width:600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .sub{
+        font-size: 20px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis:100% ;
+    }
+    .about-col-1{
+        margin-bottom:30px;
+    }
+    .header-text h1{
+        font-size: 10px;
+        margin-top:20px ;
+        font: bold;
+    }
+    .header-text{
+        margin-top:20%;
+        font-size: 10px;
+        }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+
+    }
+    
+}
+#msg{
+    color:green;
+    margin-top: -40px;
+    display: block;
+    margin-left:100px;
+}
